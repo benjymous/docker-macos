@@ -2,7 +2,7 @@ FROM debian:stretch
 MAINTAINER Florian Zwoch <fzwoch@gmail.com>
 
 RUN apt update
-RUN apt install -y curl git make clang
+RUN apt install -y curl git make clang cmake
 
 RUN cd /opt \
  && git clone https://github.com/tpoechtrager/osxcross.git \
