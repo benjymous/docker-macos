@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 MAINTAINER benjymous <benjymous@users.noreply.github.com>
 
 RUN apt update
-RUN apt install -y curl git make clang wget
+RUN apt install -y curl git make clang wget rsync
 RUN cd /opt \
  && git clone https://github.com/tpoechtrager/osxcross.git \
  && cd osxcross \
